@@ -1,7 +1,7 @@
-#Hello SDL
+# Hello SDL
 The next step is to see something of the SDL library on screen.
 
-##SDL
+## SDL
 Emscripten comes with at least SDL1. Most documentation that I find in the internet guarantees that it can 
 always use SDL1 as the emscripten team reimplemented it as part of their Library. Looking at the includes 
 directory I saw SDL2 too, so I assume that at May/2020 they ship SDL2 too.
@@ -13,7 +13,7 @@ catalog and many Humble Bundle games.". If I remember correctly it began as a Di
 portability to the games because the game would use the wrapper and the wrapper would be implemented using
 the target system's libraries.
 
-###Drawing something on the screen
+### Drawing something on the screen
 - Initialize SDL with video subsystem. (```SDL_Init```)
 - Set the video mode (```SDL_SetVideoMode```), that gives me a SDL_Surface. A SDL_Surface is a collection
 of pixels used in blitting.
@@ -25,7 +25,7 @@ doing in this example is slow and most certainly there are better ways.
 front buffer being shown and the former front buffer becomes the back buffer in which the next drawings can be
 done.
 
-##Emscritpten Envoronment
+## Emscritpten Envoronment
 
 ### Toolchain file
 Instead of using emcmake/emmake I can use the toolchain file I found. Just remember to 
